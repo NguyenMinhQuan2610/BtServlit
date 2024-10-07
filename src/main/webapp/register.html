@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            label{
+                display: block;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Đăng kí thông tin</h2>
+        <hr>
+        <form action="RegisterServlit" method="POST" enctype="multipart/form-data">
+            <div>
+                <label><b>Họ tên</b></label>
+                <input type="text" name="hoten" value="" required/>
+            </div>
+            <div>
+                <label>Giới tính</label>
+                <input type="radio" name="gioitinh" value="Nam" checked="checked" /> Nam
+                <input type="radio" name="gioitinh" value="Nu" />Nữ
+            </div>
+            <div>
+                <label>Sở thích</label>
+                <input type="checkbox" name="sothich" value="Mua sắm"  />Mua sắm <br>
+                <input type="checkbox" name="sothich" value="Du lịch"  />Du lịch <br>
+                <input type="checkbox" name="sothich" value="Xem phim"  />Xem phim <br>
+            </div>
+            <div>
+                <label>Ảnh đại diện</label>
+                <input type="file" name="hinh" required/>
+            </div>
+            <div>
+                <input type="submit" value="gửi" />
+            </div>
+        </form>
+    </body>
+</html>

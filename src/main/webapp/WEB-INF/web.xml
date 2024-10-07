@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>WelcomeServlet</servlet-name>
+        <servlet-class>my.servlets.WelcomeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HinhTronServlet</servlet-name>
+        <servlet-class>my.servlets.HinhTronServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DoiTienServlit</servlet-name>
+        <servlet-class>my.servlets.DoiTienServlit</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegisterServlit</servlet-name>
+        <servlet-class>my.servlets.RegisterServlit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WelcomeServlet</servlet-name>
+        <url-pattern>/WelcomeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HinhTronServlet</servlet-name>
+        <url-pattern>/HinhTronServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DoiTienServlit</servlet-name>
+        <url-pattern>/DoiTienServlit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterServlit</servlet-name>
+        <url-pattern>/RegisterServlit</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
